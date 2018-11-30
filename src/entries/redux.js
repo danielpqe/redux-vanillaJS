@@ -40,9 +40,14 @@ const reducer = function (state,action) {
 
 const store = createStore(
     reducer,
-            initialState,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+            initialState
 )
+
+// const store = createStore(
+//     reducer,
+//     initialState,
+//     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+// )
 
 function render() {
     const $container = document.getElementById('playlist');
